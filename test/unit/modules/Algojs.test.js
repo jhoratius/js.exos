@@ -5,9 +5,9 @@ import {
     // myFct,
     // goalTotal,
     // GrasshopperOrder,
-    getFirstValue,
+    // getFirstValue,
     // sortByLength,
-    // minMax,
+    minMax,
     // filterArray,
     // animals,
     // lastItem,
@@ -75,45 +75,45 @@ import {
 //     });
 // });
 // // -------------------------------------------------- Return the First Element in an Array --------------------------------------
-test("---------getFirstValue---------", t => {
-    t.test("getFirstValue", assert => {
-        const message = "Return the first element value";
-        const expected = 58;
-        const actual = getFirstValue();
+// test("---------getFirstValue---------", t => {
+//     t.test("getFirstValue", assert => {
+//         const message = "Return the first element value";
+//         const expected = 58;
+//         const actual = getFirstValue();
 
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ---------------------------------------- Find the Smallest and Biggest Numbers ------------------------------------------------
-// test("---------minMax---------", t => {
-
-//     t.test("TEST 1 : minMax", assert => {
-//         const message = "Should return [1, 5]";
-//         const expected = [1, 5];
-//         const actual = minMax([1, 2, 3, 4, 5]);
-
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 : minMax", assert => {
-//         const message = 'Should return [5, 2334454]';
-//         const expected = [5, 2334454];
-//         const actual = minMax([2334454, 5]);
-
-//         assert.deepEqual(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 : minMax", assert => {
-//         const message = 'Should return [1, 1]';
-//         const expected = [1, 1];
-//         const actual = minMax([1]);
-
-//         assert.deepEqual(actual, expected, message);
+//         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ---------------------------------------- Find the Smallest and Biggest Numbers ------------------------------------------------
+test("---------minMax---------", t => {
+
+    t.test("TEST 1 : minMax", assert => {
+        const message = "Should return [1, 5]";
+        const expected = [1, 5];
+        const actual = minMax([1, 2, 3, 4, 5]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : minMax", assert => {
+        const message = 'Should return [5, 2334454]';
+        const expected = [5, 2334454];
+        const actual = minMax([2334454, 5]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : minMax", assert => {
+        const message = 'Should return [1, 1]';
+        const expected = [1, 1];
+        const actual = minMax([1]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------- Sort by String Length --------------------------------------------
 // test("---------sortByLength---------", t => {

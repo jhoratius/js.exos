@@ -2,30 +2,43 @@
 
 // --------------------------------------------Function without argument--------------------------------------------
 // export function isoNum() {
-//     return 42
+//    return 42;
 // }
 
 // --------------------------------------------------- Function with arguments -------------------------------------
 // export function myFct(a, b) {
-//        return a + b
+//    return a + b;
 // }
 
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
 // export function goalTotal(a, b, c){
-//           return a + b + c
+//    return a + b + c;
 // }
           
 // // --------------------------------------------------- Grasshopper Order of Operations ------------------------------------
 // export function GrasshopperOrder(){
-//           return 2 * 2 * 2 * 2 * 2
+//    return 2 * 2 * 2 * 2 * 2;
 // }
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
-export function getFirstValue(tab){
-    return tab[0]
-}
+// export function getFirstValue(tab){
+//    return tab[0];
+// }
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
-
+export function minMax(tab){
+    var a = tab[0]
+    var b = tab[0]
+    for(var i=0; i < tab.length - 1; i++){
+        if(a > tab[i+1]){
+            a = tab[i+1];
+        }
+        if(b < tab[i]){
+            b = tab[i+1];
+        }
+    }
+    var tab1 = [a, b];
+return tab1;
+}
 
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
