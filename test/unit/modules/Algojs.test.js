@@ -6,8 +6,8 @@ import {
     // goalTotal,
     // GrasshopperOrder,
     // getFirstValue,
-    // sortByLength,
-    minMax,
+    // minMax,
+    sortByLength,
     // filterArray,
     // animals,
     // lastItem,
@@ -87,62 +87,62 @@ import {
 // });
 
 // // ---------------------------------------- Find the Smallest and Biggest Numbers ------------------------------------------------
-test("---------minMax---------", t => {
+// test("---------minMax---------", t => {
 
-    t.test("TEST 1 : minMax", assert => {
-        const message = "Should return [1, 5]";
-        const expected = [1, 5];
-        const actual = minMax([1, 2, 3, 4, 5]);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 : minMax", assert => {
-        const message = 'Should return [5, 2334454]';
-        const expected = [5, 2334454];
-        const actual = minMax([2334454, 5]);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 : minMax", assert => {
-        const message = 'Should return [1, 1]';
-        const expected = [1, 1];
-        const actual = minMax([1]);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -------------------------------------------- Sort by String Length --------------------------------------------
-// test("---------sortByLength---------", t => {
-
-//     t.test("TEST 1 : sortByLength", assert => {
-//         const message = "returns an array of strings sorted by length in **ascending** order like a, bb, ccc, dddd, eeeee";
-//         const expected = ["a", "bb", "ccc", "dddd", "eeeee"];
-//         const actual = sortByLength(["a", "ccc", "eeeee", "dddd", "bb"]);
+//     t.test("TEST 1 : minMax", assert => {
+//         const message = "Should return [1, 5]";
+//         const expected = [1, 5];
+//         const actual = minMax([1, 2, 3, 4, 5]);
 
 //         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 2 : sortByLength", assert => {
-//         const message = 'returns an array of strings sorted by length in **ascending** order like ["Apple", "Google", "Microsoft"]';
-//         const expected = ["Apple", "Google", "Microsoft"];
-//         const actual = sortByLength(["Google", "Apple", "Microsoft"]);
+//     t.test("TEST 2 : minMax", assert => {
+//         const message = 'Should return [5, 2334454]';
+//         const expected = [5, 2334454];
+//         const actual = minMax([2334454, 5]);
 
 //         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 3 : sortByLength", assert => {
-//         const message = 'returns an array of strings sorted by length in **ascending** order like ["Raphael", "Leonardo", "Donatello", "Michelangelo"]';
-//         const expected = ["Raphael", "Leonardo", "Donatello", "Michelangelo"];
-//         const actual = sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"]);
+//     t.test("TEST 3 : minMax", assert => {
+//         const message = 'Should return [1, 1]';
+//         const expected = [1, 1];
+//         const actual = minMax([1]);
 
 //         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -------------------------------------------- Sort by String Length --------------------------------------------
+test("---------sortByLength---------", t => {
+
+    t.test("TEST 1 : sortByLength", assert => {
+        const message = "returns an array of strings sorted by length in **ascending** order like a, bb, ccc, dddd, eeeee";
+        const expected = ["a", "bb", "ccc", "dddd", "eeeee"];
+        const actual = sortByLength(["a", "ccc", "eeeee", "dddd", "bb"]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : sortByLength", assert => {
+        const message = 'returns an array of strings sorted by length in **ascending** order like ["Apple", "Google", "Microsoft"]';
+        const expected = ["Apple", "Google", "Microsoft"];
+        const actual = sortByLength(["Google", "Apple", "Microsoft"]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : sortByLength", assert => {
+        const message = 'returns an array of strings sorted by length in **ascending** order like ["Raphael", "Leonardo", "Donatello", "Michelangelo"]';
+        const expected = ["Raphael", "Leonardo", "Donatello", "Michelangelo"];
+        const actual = sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"]);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------- Filter Strings from Array --------------------------------------
 // test("---------filterArray---------", t => {

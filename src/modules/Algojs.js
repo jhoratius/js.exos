@@ -25,24 +25,36 @@
 // }
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
-export function minMax(tab){
-    var a = tab[0]
-    var b = tab[0]
-    for(var i=0; i < tab.length - 1; i++){
-        if(a > tab[i+1]){
-            a = tab[i+1];
-        }
-        if(b < tab[i]){
-            b = tab[i+1];
-        }
-    }
-    var tab1 = [a, b];
-return tab1;
-}
+// export function minMax(tab){
+//     var a = tab[0]
+//     var b = tab[0]
+//     for(var i=0; i < tab.length; i++){
+//         if(a > tab[i+1]){
+//             a = tab[i+1];
+//         }
+//         if(b < tab[i+1]){
+//             b = tab[i+1];
+//         }
+//     }
+//     var tab1 = [a, b];
+// return tab1;
+// }
 
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
-
+    export function sortByLength(tab){
+        var tab2 = tab;
+        var tempo = 0;
+        for(var i = 0; i < tab.length-1; i++){
+            for(var j = i + 1; j < tab.length; j++)
+                if(tab2[i].length > tab2[j].length){
+                    tempo = tab2[i];
+                    tab2[i] = tab2[j];
+                    tab2[j] = tempo;
+                }
+            }
+        return tab2;
+    }
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
 
