@@ -1,12 +1,14 @@
 "use strict";
 
 // --------------------------------------------Function without argument--------------------------------------------
-export function isoNum() {
-    return true;
-}
+// export function isoNum() {
+//     return 42;
+// }
 
 // --------------------------------------------------- Function with arguments -------------------------------------
-
+export function myFct(a, b) {
+       return a + b;
+}
 
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
 
