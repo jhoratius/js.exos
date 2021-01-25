@@ -1,22 +1,24 @@
 "use strict";
 
 // --------------------------------------------Function without argument--------------------------------------------
-export function isoNum() {
-    return 42
-}
+// export function isoNum() {
+//     return 42
+// }
 
 // --------------------------------------------------- Function with arguments -------------------------------------
-export function myFct(a, b) {
-       return a + b
-}
+// export function myFct(a, b) {
+//        return a + b
+// }
 
 // --------------------------------------------------- Messi’s Goal Total -------------------------------------
-export function goalTotal(a, b, c){
-          return a + b + c
-}
+// export function goalTotal(a, b, c){
+//           return a + b + c
+// }
           
-// --------------------------------------------------- Grasshopper Order of Operations -------------------------------------
-
+// // --------------------------------------------------- Grasshopper Order of Operations ------------------------------------
+export function GrasshopperOrder(){
+          return 2 * 2 * 2 * 2 * 2
+}
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
 
 

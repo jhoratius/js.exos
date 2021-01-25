@@ -1,10 +1,10 @@
 import test from "tape";
 
 import {
-    isoNum,
-    myFct,
-    goalTotal,
-    // GrasshopperOrder,
+    // isoNum,
+    // myFct,
+    // goalTotal,
+    GrasshopperOrder,
     // getFirstValue,
     // sortByLength,
     // minMax,
@@ -27,53 +27,53 @@ import {
 } from "../../../src/modules/Algojs";
 
 // --------------------------------------------Function without argument--------------------------------------------
-test("---------isoNum---------", t => {
+// test("---------isoNum---------", t => {
 
-    t.test("isoNum", assert => {
-        const message = "should create a function named isoNum Without Argument return true";
-        const expected = 42;
-        const actual = isoNum();
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-// // --------------------------------------------------- Function with arguments -------------------------------------
-test("---------myFct---------", t => {
-
-    t.test("myFct", assert => {
-        const message = "should create a function With 2 Arguments and return sum : 91 ";
-        const expected = 91;
-        const actual = myFct(90, 1);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-// // -------------------------------------------------- Messi's Goal Total --------------------------------------
-test("--------goalTotal---------", t => {
-
-    t.test("goalTotal", assert => {
-        const message = "should return total of messi goals";
-        const expected = 58;
-        const actual = goalTotal(43, 10, 5);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-// // ------------------------------------------------ Grasshopper Order of Operations ----------------------------------------
-// test("---------GrasshopperOrder-----------", t => {
-
-//     t.test("GrasshopperOrder", assert => {
-//         const message = "Fix the function to make it return 32 without changing the number";
-//         const expected = 32;
-//         const actual = GrasshopperOrder();
+//     t.test("isoNum", assert => {
+//         const message = "should create a function named isoNum Without Argument return true";
+//         const expected = 42;
+//         const actual = isoNum();
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+// // --------------------------------------------------- Function with arguments -------------------------------------
+// test("---------myFct---------", t => {
+
+//     t.test("myFct", assert => {
+//         const message = "should create a function With 2 Arguments and return sum : 91 ";
+//         const expected = 91;
+//         const actual = myFct(90, 1);
+
+//         assert.equal(actual, expected, message);
+//         assert.end();
+//     });
+// });
+// // -------------------------------------------------- Messi's Goal Total --------------------------------------
+// test("--------goalTotal---------", t => {
+
+//     t.test("goalTotal", assert => {
+//         const message = "should return total of messi goals";
+//         const expected = 58;
+//         const actual = goalTotal(43, 10, 5);
+
+//         assert.equal(actual, expected, message);
+//         assert.end();
+//     });
+// });
+// // ------------------------------------------------ Grasshopper Order of Operations ----------------------------------------
+test("---------GrasshopperOrder-----------", t => {
+
+    t.test("GrasshopperOrder", assert => {
+        const message = "Fix the function to make it return 32 without changing the number";
+        const expected = 32;
+        const actual = GrasshopperOrder();
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 // // -------------------------------------------------- Return the First Element in an Array --------------------------------------
 // test("---------getFirstValue---------", t => {
 //     t.test("getFirstValue", assert => {
