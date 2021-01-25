@@ -4,8 +4,8 @@ import {
     // isoNum,
     // myFct,
     // goalTotal,
-    GrasshopperOrder,
-    // getFirstValue,
+    // GrasshopperOrder,
+    getFirstValue,
     // sortByLength,
     // minMax,
     // filterArray,
@@ -63,28 +63,28 @@ import {
 //     });
 // });
 // // ------------------------------------------------ Grasshopper Order of Operations ----------------------------------------
-test("---------GrasshopperOrder-----------", t => {
+// test("---------GrasshopperOrder-----------", t => {
 
-    t.test("GrasshopperOrder", assert => {
-        const message = "Fix the function to make it return 32 without changing the number";
-        const expected = 32;
-        const actual = GrasshopperOrder();
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-// // -------------------------------------------------- Return the First Element in an Array --------------------------------------
-// test("---------getFirstValue---------", t => {
-//     t.test("getFirstValue", assert => {
-//         const message = "Return the first element value";
-//         const expected = 58;
-//         const actual = getFirstValue();
+//     t.test("GrasshopperOrder", assert => {
+//         const message = "Fix the function to make it return 32 without changing the number";
+//         const expected = 32;
+//         const actual = GrasshopperOrder();
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+// // -------------------------------------------------- Return the First Element in an Array --------------------------------------
+test("---------getFirstValue---------", t => {
+    t.test("getFirstValue", assert => {
+        const message = "Return the first element value";
+        const expected = 58;
+        const actual = getFirstValue();
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ---------------------------------------- Find the Smallest and Biggest Numbers ------------------------------------------------
 // test("---------minMax---------", t => {

@@ -16,11 +16,13 @@
 // }
           
 // // --------------------------------------------------- Grasshopper Order of Operations ------------------------------------
-export function GrasshopperOrder(){
-          return 2 * 2 * 2 * 2 * 2
-}
+// export function GrasshopperOrder(){
+//           return 2 * 2 * 2 * 2 * 2
+// }
 // --------------------------------------------------- Return the First Element in an Array -------------------------------------
-
+export function getFirstValue(tab){
+    return tab[0]
+}
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
 
