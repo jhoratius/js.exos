@@ -3,7 +3,7 @@ import test from "tape";
 import {
     isoNum,
     myFct,
-    // goalTotal,
+    goalTotal,
     // GrasshopperOrder,
     // getFirstValue,
     // sortByLength,
@@ -38,7 +38,7 @@ test("---------isoNum---------", t => {
         assert.end();
     });
 });
-// --------------------------------------------------- Function with arguments -------------------------------------
+// // --------------------------------------------------- Function with arguments -------------------------------------
 test("---------myFct---------", t => {
 
     t.test("myFct", assert => {
@@ -51,17 +51,17 @@ test("---------myFct---------", t => {
     });
 });
 // // -------------------------------------------------- Messi's Goal Total --------------------------------------
-// test("--------goalTotal---------", t => {
+test("--------goalTotal---------", t => {
 
-//     t.test("goalTotal", assert => {
-//         const message = "should return total of messi goals";
-//         const expected = 58;
-//         const actual = goalTotal(43, 10, 5);
+    t.test("goalTotal", assert => {
+        const message = "should return total of messi goals";
+        const expected = 58;
+        const actual = goalTotal(43, 10, 5);
 
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-// });
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 // // ------------------------------------------------ Grasshopper Order of Operations ----------------------------------------
 // test("---------GrasshopperOrder-----------", t => {
 
