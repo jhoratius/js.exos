@@ -19,8 +19,8 @@ import {
     // convert,
     // returnNegative,
     // simpleLoop,
-    getArea,
-    // makesTen,
+    // getArea,
+    makesTen,
     // addUp,
     // matchHouses,
 
@@ -352,68 +352,68 @@ import {
 // });
 
 // // ---------------------------------------------Area of a Rectangle-------------------------------------------
-test("---------Area of a Rectangle---------", t => {
-    t.test("TEST 1 :  getArea", assert => {
-        const message = "returns negative of that number.  Your function  Should return 12";
-        const expected = 12;
-        const actual = getArea(3, 4);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 :  getArea", assert => {
-        const message = "returns negative of that number.  Your function  Should return 110";
-        const expected = 110;
-        const actual = getArea(10, 11);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 :  getArea", assert => {
-        const message = "returns negative of that number.  Your function  Should return -1";
-        const expected = -1;
-        const actual = getArea(-1, 5);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 4 :  getArea", assert => {
-        const message = "returns negative of that number. Your function  Should return -1";
-        const expected = -1;
-        const actual = getArea(0, 2);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -----------------------------------------------Two Makes Ten-----------------------------------------
-// test("---------Two Makes Ten---------", t => {
-//     t.test("TEST 1 :  makesTen", assert => {
-//         const message = "Your function  Should return true";
-//         const expected = true;
-//         const actual = makesTen(9, 10);
+// test("---------Area of a Rectangle---------", t => {
+//     t.test("TEST 1 :  getArea", assert => {
+//         const message = "returns negative of that number.  Your function  Should return 12";
+//         const expected = 12;
+//         const actual = getArea(3, 4);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 2 :  makesTen", assert => {
-//         const message = "Your function  Should return false";
-//         const expected = false;
-//         const actual = makesTen(9, 9);
+//     t.test("TEST 2 :  getArea", assert => {
+//         const message = "returns negative of that number.  Your function  Should return 110";
+//         const expected = 110;
+//         const actual = getArea(10, 11);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 3 :  makesTen", assert => {
-//         const message = "Your function  Should return true";
-//         const expected = true;
-//         const actual = makesTen(1, 9);
+//     t.test("TEST 3 :  getArea", assert => {
+//         const message = "returns negative of that number.  Your function  Should return -1";
+//         const expected = -1;
+//         const actual = getArea(-1, 5);
+
+//         assert.equal(actual, expected, message);
+//         assert.end();
+//     });
+//     t.test("TEST 4 :  getArea", assert => {
+//         const message = "returns negative of that number. Your function  Should return -1";
+//         const expected = -1;
+//         const actual = getArea(0, 2);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -----------------------------------------------Two Makes Ten-----------------------------------------
+test("---------Two Makes Ten---------", t => {
+    t.test("TEST 1 :  makesTen", assert => {
+        const message = "Your function  Should return true";
+        const expected = true;
+        const actual = makesTen(9, 10);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  makesTen", assert => {
+        const message = "Your function  Should return false";
+        const expected = false;
+        const actual = makesTen(9, 9);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  makesTen", assert => {
+        const message = "Your function  Should return true";
+        const expected = true;
+        const actual = makesTen(1, 9);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------Add up the Numbers from a Single Number------------------------------------------------------
 // test("---------Add up the Numbers from a Single Number---------", t => {

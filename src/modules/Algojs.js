@@ -150,20 +150,20 @@
     //     return tab;
     // }
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
-    export function getArea(a, b){
-        if(a <= 0 || b <= 0){
-            return -1;
-        }
-        var area = a * b;
-        return area;
-    }
-// --------------------------------------------------- Two Makes Ten -------------------------------------
-    // export function makesTen(a, b){
-    //     if(a === 10 || b === 10 || a + b === 10){
-    //         return true;
+    // export function getArea(a, b){
+    //     if(a <= 0 || b <= 0){
+    //         return -1;
     //     }
-    // return false;
+    //     var area = a * b;
+    //     return area;
     // }
+// --------------------------------------------------- Two Makes Ten -------------------------------------
+    export function makesTen(a, b){
+        if(a === 10 || b === 10 || a + b === 10){
+            return true;
+        }
+    return false;
+    }
 
 // --------------------------------------------------- Add up the Numbers from a Single Number -------------------------------------
         // export function addUp(a){
