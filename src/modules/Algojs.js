@@ -115,21 +115,21 @@
     // console.log(tab2);
     // }
 // --------------------------------------------------- Array of Multiples -------------------------------------
-    export function arrayOfMultiples(a, b){
-        var tab = [];
-        var min = 0;
-        for(var i = 1; i <= b; i++){
-            min = a * i;
-            tab.push(min);
-        }
-    return tab;
-    }
-// --------------------------------------------------- Convert Hours and Minutes into Seconds -------------------------------------
-    // export function convert(a, b){
-    //     var xa = a * 3600;
-    //     var xb = b * 60;
-    //     return xa + xb;
+    // export function arrayOfMultiples(a, b){
+    //     var tab = [];
+    //     var min = 0;
+    //     for(var i = 1; i <= b; i++){
+    //         min = a * i;
+    //         tab.push(min);
+    //     }
+    // return tab;
     // }
+// --------------------------------------------------- Convert Hours and Minutes into Seconds -------------------------------------
+    export function convert(a, b){
+        var xa = a * 3600;
+        var xb = b * 60;
+        return xa + xb;
+    }
 // --------------------------------------------------- Return Negative -------------------------------------
     // export function returnNegative(a){
     //     if(a <= 0){

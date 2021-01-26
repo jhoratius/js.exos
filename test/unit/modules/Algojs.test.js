@@ -15,8 +15,8 @@ import {
     // addition,
     // boolToString,
     // filterArrayInt,
-    arrayOfMultiples,
-    // convert,
+    // arrayOfMultiples,
+    convert,
     // returnNegative,
     // simpleLoop,
     // getArea,
@@ -256,60 +256,60 @@ import {
 // });
 
 // // --------------------------------------------- Array of Multiples -------------------------------------------
-test("---------arrayOfMultiples---------", t => {
-    t.test("TEST 1 : arrayOfMultiples", assert => {
-        const message = "converts an object into an array.  Your function Should return [7, 14, 21, 28, 35]";
-        const expected = [7, 14, 21, 28, 35];
-        const actual = arrayOfMultiples(7, 5);
+// test("---------arrayOfMultiples---------", t => {
+//     t.test("TEST 1 : arrayOfMultiples", assert => {
+//         const message = "converts an object into an array.  Your function Should return [7, 14, 21, 28, 35]";
+//         const expected = [7, 14, 21, 28, 35];
+//         const actual = arrayOfMultiples(7, 5);
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 : arrayOfMultiples", assert => {
-        const message = "converts an object into an array. Your function  Should return  [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]";
-        const expected = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120];
-        const actual = arrayOfMultiples(12, 10);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 : arrayOfMultiples", assert => {
-        const message = "converts an object into an array. Your function  Should return [17, 34, 51, 68, 85, 102]";
-        const expected = [17, 34, 51, 68, 85, 102];
-        const actual = arrayOfMultiples(17, 6);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ------------------------------------------- Convert Hours and Minutes into Seconds ---------------------------------------------
-// test("---------convert---------", t => {
-//     t.test("TEST 1 :  convert", assert => {
-//         const message = "converts the args to seconds.  Your function  Should return 3780";
-//         const expected = 3780;
-//         const actual = convert(1, 3);
-
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 2 :  convert", assert => {
-//         const message = "converts the args to seconds.  Your function  Should return 7200";
-//         const expected = 7200;
-//         const actual = convert(2, 0);
+//     t.test("TEST 2 : arrayOfMultiples", assert => {
+//         const message = "converts an object into an array. Your function  Should return  [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]";
+//         const expected = [12, 24, 36, 48, 60, 72, 84, 96, 108, 120];
+//         const actual = arrayOfMultiples(12, 10);
 
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 3 :  convert", assert => {
-//         const message = "converts the args to seconds. Your function  Should return 0";
-//         const expected = 0;
-//         const actual = convert(0, 0);
+//     t.test("TEST 3 : arrayOfMultiples", assert => {
+//         const message = "converts an object into an array. Your function  Should return [17, 34, 51, 68, 85, 102]";
+//         const expected = [17, 34, 51, 68, 85, 102];
+//         const actual = arrayOfMultiples(17, 6);
 
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ------------------------------------------- Convert Hours and Minutes into Seconds ---------------------------------------------
+test("---------convert---------", t => {
+    t.test("TEST 1 :  convert", assert => {
+        const message = "converts the args to seconds.  Your function  Should return 3780";
+        const expected = 3780;
+        const actual = convert(1, 3);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  convert", assert => {
+        const message = "converts the args to seconds.  Your function  Should return 7200";
+        const expected = 7200;
+        const actual = convert(2, 0);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  convert", assert => {
+        const message = "converts the args to seconds. Your function  Should return 0";
+        const expected = 0;
+        const actual = convert(0, 0);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------- Return Negative -------------------------------------------
 // test("---------returnNegative---------", t => {
