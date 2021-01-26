@@ -69,14 +69,19 @@
 // }
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
-export function lastItem(sent){
-    var a = sent.length -1;
-    var b = sent.charAt(a);
-    return b;
-}
+// export function lastItem(sent){
+//     var a = sent.length -1;
+//     var b = sent.charAt(a);
+//     return b;
+// }
 // --------------------------------------------------- Return Last Item -------------------------------------
-
-
+    export function animals(){
+        var a = 2; var b = 3; var c = 5;
+        var chicken = a * 2
+        var cows = b * 4
+        var pigs = c * 4
+        return chicken + cows + pigs;
+    }
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
 

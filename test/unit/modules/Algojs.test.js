@@ -9,8 +9,8 @@ import {
     // minMax,
     // sortByLength,
     // filterArray,
-    lastItem,
-    // animals,
+    // lastItem,
+    animals,
     // reverseArray,
     // addition,
     // boolToString,
@@ -158,30 +158,30 @@ import {
 // });
 
 // // -----------------------------------------------The Farm Problem -----------------------------------------
-test("---------The Farm Problem---------", t => {
+// test("---------The Farm Problem---------", t => {
 
-    t.test("lastItem", assert => {
-        const message = "returns the total number of legs of all the animals.";
-        const expected = 'g';
-        const actual = lastItem('The quick brown fox jumped over the lazy dog');
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -------------------------------------------------------- The Farm Problem --------------------------------
-// test("---------animals---------", t => {
-
-//     t.test("animals", assert => {
+//     t.test("lastItem", assert => {
 //         const message = "returns the total number of legs of all the animals.";
-//         const expected = 36;
-//         const actual = animals();
+//         const expected = 'g';
+//         const actual = lastItem('The quick brown fox jumped over the lazy dog');
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -------------------------------------------------------- The Farm Problem --------------------------------
+test("---------animals---------", t => {
+
+    t.test("animals", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 36;
+        const actual = animals();
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------------------- Reverse an Array -----------------------------------------
 // test("---------reverseArray---------", t => {
