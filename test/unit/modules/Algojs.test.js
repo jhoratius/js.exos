@@ -17,8 +17,8 @@ import {
     // filterArrayInt,
     // arrayOfMultiples,
     // convert,
-    returnNegative,
-    // simpleLoop,
+    // returnNegative,
+    simpleLoop,
     // getArea,
     // makesTen,
     // addUp,
@@ -312,44 +312,44 @@ import {
 // });
 
 // // --------------------------------------------- Return Negative -------------------------------------------
-test("---------returnNegative---------", t => {
-    t.test("TEST 1 :  returnNegative", assert => {
-        const message = "returns negative of that number.  Your function  Should return -4";
-        const expected = -4;
-        const actual = returnNegative(4);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 :  returnNegative", assert => {
-        const message = "returns negative of that number.  Your function  Should return -4";
-        const expected = -4;
-        const actual = returnNegative(-4);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 :  returnNegative", assert => {
-        const message = "returns negative of that number. Your function  Should return 0";
-        const expected = 0;
-        const actual = returnNegative(0);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ------------------------------------------------- Simple Loop---------------------------------------
-// test("---------Simple Loop---------", t => {
-//     t.test("SimpleLoop     ----> 1 TEST", assert => {
+// test("---------returnNegative---------", t => {
+//     t.test("TEST 1 :  returnNegative", assert => {
 //         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = [1, 2, 3, 4, 5, 6];
-//         const actual = simpleLoop(6);
+//         const expected = -4;
+//         const actual = returnNegative(4);
 
-//         assert.deepEqual(actual, expected, message);
+//         assert.equal(actual, expected, message);
+//         assert.end();
+//     });
+//     t.test("TEST 2 :  returnNegative", assert => {
+//         const message = "returns negative of that number.  Your function  Should return -4";
+//         const expected = -4;
+//         const actual = returnNegative(-4);
+
+//         assert.equal(actual, expected, message);
+//         assert.end();
+//     });
+//     t.test("TEST 3 :  returnNegative", assert => {
+//         const message = "returns negative of that number. Your function  Should return 0";
+//         const expected = 0;
+//         const actual = returnNegative(0);
+
+//         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ------------------------------------------------- Simple Loop---------------------------------------
+test("---------Simple Loop---------", t => {
+    t.test("SimpleLoop     ----> 1 TEST", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = [1, 2, 3, 4, 5, 6];
+        const actual = simpleLoop(6);
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ---------------------------------------------Area of a Rectangle-------------------------------------------
 // test("---------Area of a Rectangle---------", t => {

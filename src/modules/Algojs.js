@@ -131,24 +131,24 @@
     //     return xa + xb;
     // }
 // --------------------------------------------------- Return Negative -------------------------------------
-    export function returnNegative(a){
-        if(a <= 0){
-            return a;
-        }
-        if(a > 0){
-            return a * -1;
-        }
-    }
-// --------------------------------------------------- Simple Loop -------------------------------------
-    // export function simpleLoop(numb){
-    //     var tab = [];
-    //     var add = 0;
-    //     for(var i = 0; i < numb; i++){
-    //         add = i + 1;
-    //         tab.push(add);
+    // export function returnNegative(a){
+    //     if(a <= 0){
+    //         return a;
     //     }
-    //     return tab;
+    //     if(a > 0){
+    //         return a * -1;
+    //     }
     // }
+// --------------------------------------------------- Simple Loop -------------------------------------
+    export function simpleLoop(numb){
+        var tab = [];
+        var add = 0;
+        for(var i = 0; i < numb; i++){
+            add = i + 1;
+            tab.push(add);
+        }
+        return tab;
+    }
 // --------------------------------------------------- Area of a Rectangle -------------------------------------
     // export function getArea(a, b){
     //     if(a <= 0 || b <= 0){
