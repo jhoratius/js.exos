@@ -158,20 +158,20 @@
     //     return area;
     // }
 // --------------------------------------------------- Two Makes Ten -------------------------------------
-    export function makesTen(a, b){
-        if(a === 10 || b === 10 || a + b === 10){
-            return true;
-        }
-    return false;
-    }
+    // export function makesTen(a, b){
+    //     if(a === 10 || b === 10 || a + b === 10){
+    //         return true;
+    //     }
+    // return false;
+    // }
 
 // --------------------------------------------------- Add up the Numbers from a Single Number -------------------------------------
-        // export function addUp(a){
-        //     var sum = 0;
-        //     var plus = 0;
-        //     for(var i = 1; i < a+1; i++){
-        //         plus = plus + i
-        //     }
-        //     return plus;
-        // }
+        export function addUp(a){
+            var sum = 0;
+            var plus = 0;
+            for(var i = 1; i < a+1; i++){
+                plus = plus + i
+            }
+            return plus;
+        }
 // --------------------------------------------------- Matchstick Houses -------------------------------------

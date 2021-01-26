@@ -20,8 +20,8 @@ import {
     // returnNegative,
     // simpleLoop,
     // getArea,
-    makesTen,
-    // addUp,
+    // makesTen,
+    addUp,
     // matchHouses,
 
 } from "../../../src/modules/Algojs";
@@ -388,60 +388,60 @@ import {
 // });
 
 // // -----------------------------------------------Two Makes Ten-----------------------------------------
-test("---------Two Makes Ten---------", t => {
-    t.test("TEST 1 :  makesTen", assert => {
-        const message = "Your function  Should return true";
-        const expected = true;
-        const actual = makesTen(9, 10);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 :  makesTen", assert => {
-        const message = "Your function  Should return false";
-        const expected = false;
-        const actual = makesTen(9, 9);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 :  makesTen", assert => {
-        const message = "Your function  Should return true";
-        const expected = true;
-        const actual = makesTen(1, 9);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ----------------------------------Add up the Numbers from a Single Number------------------------------------------------------
-// test("---------Add up the Numbers from a Single Number---------", t => {
-//     t.test("TEST 1 : addUp", assert => {
-//         const message = "Your function  Should return 10";
-//         const expected = 10;
-//         const actual = addUp(4);
+// test("---------Two Makes Ten---------", t => {
+//     t.test("TEST 1 :  makesTen", assert => {
+//         const message = "Your function  Should return true";
+//         const expected = true;
+//         const actual = makesTen(9, 10);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 2 : addUp", assert => {
-//         const message = "Your function  Should return 91";
-//         const expected = 91;
-//         const actual = addUp(13);
+//     t.test("TEST 2 :  makesTen", assert => {
+//         const message = "Your function  Should return false";
+//         const expected = false;
+//         const actual = makesTen(9, 9);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 3 : addUp", assert => {
-//         const message = "Your function  Should return 180300";
-//         const expected = 180300;
-//         const actual = addUp(600);
+//     t.test("TEST 3 :  makesTen", assert => {
+//         const message = "Your function  Should return true";
+//         const expected = true;
+//         const actual = makesTen(1, 9);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ----------------------------------Add up the Numbers from a Single Number------------------------------------------------------
+test("---------Add up the Numbers from a Single Number---------", t => {
+    t.test("TEST 1 : addUp", assert => {
+        const message = "Your function  Should return 10";
+        const expected = 10;
+        const actual = addUp(4);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 : addUp", assert => {
+        const message = "Your function  Should return 91";
+        const expected = 91;
+        const actual = addUp(13);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 : addUp", assert => {
+        const message = "Your function  Should return 180300";
+        const expected = 180300;
+        const actual = addUp(600);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ----------------------------------Matchstick Houses------------------------------------------------------
 // test("---------Matchstick Houses---------", t => {
