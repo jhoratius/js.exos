@@ -100,13 +100,20 @@
     //     return tab2;
     // }
 // --------------------------------------------------- Reverse an Array -------------------------------------
-    export function addition(){
-        var numb = 9;
-        return numb + 1;
-    }
+    // export function addition(){
+    //     var numb = 9;
+    //     return numb + 1;
+    // }
 
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
-
+    export function boolToString(a){
+        if(a === true){
+            return 'true';
+        }
+        if(a === false){
+            return 'false';
+        }
+    }
 
 // --------------------------------------------------- Boolean to String Conversion -------------------------------------
 
