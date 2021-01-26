@@ -16,8 +16,8 @@ import {
     // boolToString,
     // filterArrayInt,
     // arrayOfMultiples,
-    convert,
-    // returnNegative,
+    // convert,
+    returnNegative,
     // simpleLoop,
     // getArea,
     // makesTen,
@@ -284,60 +284,60 @@ import {
 // });
 
 // // ------------------------------------------- Convert Hours and Minutes into Seconds ---------------------------------------------
-test("---------convert---------", t => {
-    t.test("TEST 1 :  convert", assert => {
-        const message = "converts the args to seconds.  Your function  Should return 3780";
-        const expected = 3780;
-        const actual = convert(1, 3);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 :  convert", assert => {
-        const message = "converts the args to seconds.  Your function  Should return 7200";
-        const expected = 7200;
-        const actual = convert(2, 0);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 :  convert", assert => {
-        const message = "converts the args to seconds. Your function  Should return 0";
-        const expected = 0;
-        const actual = convert(0, 0);
-
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // --------------------------------------------- Return Negative -------------------------------------------
-// test("---------returnNegative---------", t => {
-//     t.test("TEST 1 :  returnNegative", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = -4;
-//         const actual = returnNegative(4);
+// test("---------convert---------", t => {
+//     t.test("TEST 1 :  convert", assert => {
+//         const message = "converts the args to seconds.  Your function  Should return 3780";
+//         const expected = 3780;
+//         const actual = convert(1, 3);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 2 :  returnNegative", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -4";
-//         const expected = -4;
-//         const actual = returnNegative(-4);
+//     t.test("TEST 2 :  convert", assert => {
+//         const message = "converts the args to seconds.  Your function  Should return 7200";
+//         const expected = 7200;
+//         const actual = convert(2, 0);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
-//     t.test("TEST 3 :  returnNegative", assert => {
-//         const message = "returns negative of that number. Your function  Should return 0";
+//     t.test("TEST 3 :  convert", assert => {
+//         const message = "converts the args to seconds. Your function  Should return 0";
 //         const expected = 0;
-//         const actual = returnNegative(0);
+//         const actual = convert(0, 0);
 
 //         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // --------------------------------------------- Return Negative -------------------------------------------
+test("---------returnNegative---------", t => {
+    t.test("TEST 1 :  returnNegative", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = -4;
+        const actual = returnNegative(4);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  returnNegative", assert => {
+        const message = "returns negative of that number.  Your function  Should return -4";
+        const expected = -4;
+        const actual = returnNegative(-4);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  returnNegative", assert => {
+        const message = "returns negative of that number. Your function  Should return 0";
+        const expected = 0;
+        const actual = returnNegative(0);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // ------------------------------------------------- Simple Loop---------------------------------------
 // test("---------Simple Loop---------", t => {

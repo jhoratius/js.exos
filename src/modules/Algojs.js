@@ -125,20 +125,20 @@
     // return tab;
     // }
 // --------------------------------------------------- Convert Hours and Minutes into Seconds -------------------------------------
-    export function convert(a, b){
-        var xa = a * 3600;
-        var xb = b * 60;
-        return xa + xb;
-    }
-// --------------------------------------------------- Return Negative -------------------------------------
-    // export function returnNegative(a){
-    //     if(a <= 0){
-    //         return a;
-    //     }
-    //     if(a > 0){
-    //         return a * -1;
-    //     }
+    // export function convert(a, b){
+    //     var xa = a * 3600;
+    //     var xb = b * 60;
+    //     return xa + xb;
     // }
+// --------------------------------------------------- Return Negative -------------------------------------
+    export function returnNegative(a){
+        if(a <= 0){
+            return a;
+        }
+        if(a > 0){
+            return a * -1;
+        }
+    }
 // --------------------------------------------------- Simple Loop -------------------------------------
     // export function simpleLoop(numb){
     //     var tab = [];
