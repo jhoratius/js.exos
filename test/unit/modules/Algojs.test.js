@@ -8,9 +8,9 @@ import {
     // getFirstValue,
     // minMax,
     // sortByLength,
-    filterArray,
+    // filterArray,
+    lastItem,
     // animals,
-    // lastItem,
     // reverseArray,
     // addition,
     // boolToString,
@@ -145,30 +145,30 @@ import {
 // });
 
 // // -------------------------------------------------- Filter Strings from Array --------------------------------------
-test("---------filterArray---------", t => {
+// test("---------filterArray---------", t => {
 
-    t.test("filterArray", assert => {
-        const message = "returns an array of integers only.";
-        const expected = [1, 2, 3, 4];
-        const actual = filterArray();
+//     t.test("filterArray", assert => {
+//         const message = "returns an array of integers only.";
+//         const expected = [1, 2, 3, 4];
+//         const actual = filterArray();
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -----------------------------------------------The Farm Problem -----------------------------------------
-// test("---------The Farm Problem---------", t => {
-
-//     t.test("lastItem", assert => {
-//         const message = "returns the total number of legs of all the animals.";
-//         const expected = 'g';
-//         const actual = lastItem('The quick brown fox jumped over the lazy dog');
-
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -----------------------------------------------The Farm Problem -----------------------------------------
+test("---------The Farm Problem---------", t => {
+
+    t.test("lastItem", assert => {
+        const message = "returns the total number of legs of all the animals.";
+        const expected = 'g';
+        const actual = lastItem('The quick brown fox jumped over the lazy dog');
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------------- The Farm Problem --------------------------------
 // test("---------animals---------", t => {

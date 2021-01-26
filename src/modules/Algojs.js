@@ -57,19 +57,23 @@
     // }
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
-export function filterArray(){
-    var tab = [1, 1.5, 2, 3, "a", "b", 4];
-    var tab2 = [];
-    for(var i = 0; i < tab.length; i++){
-        if(tab[i] % 1 === 0 ){
-            tab2.push(tab[i]);
-        }
-    }
-    return tab2;
-}
+// export function filterArray(){
+//     var tab = [1, 1.5, 2, 3, "a", "b", 4];
+//     var tab2 = [];
+//     for(var i = 0; i < tab.length; i++){
+//         if(tab[i] % 1 === 0 ){
+//             tab2.push(tab[i]);
+//         }
+//     }
+//     return tab2;
+// }
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
-
+export function lastItem(sent){
+    var a = sent.length -1;
+    var b = sent.charAt(a);
+    return b;
+}
 // --------------------------------------------------- Return Last Item -------------------------------------
 
 
