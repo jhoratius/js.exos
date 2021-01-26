@@ -11,8 +11,8 @@ import {
     // filterArray,
     // lastItem,
     // animals,
-    reverseArray,
-    // addition,
+    // reverseArray,
+    addition,
     // boolToString,
     // filterArrayInt,
     // arrayOfMultiples,
@@ -184,28 +184,28 @@ import {
 // });
 
 // // ----------------------------------------------- Reverse an Array -----------------------------------------
-test("---------reverseArray---------", t => {
-    t.test("reverseArray", assert => {
-        const message = "reverse an array.";
-        const expected = [4, 3, 2, 1];
-        const actual = reverseArray();
+// test("---------reverseArray---------", t => {
+//     t.test("reverseArray", assert => {
+//         const message = "reverse an array.";
+//         const expected = [4, 3, 2, 1];
+//         const actual = reverseArray();
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
-// test("---------addition---------", t => {
-//     t.test("addition", assert => {
-//         const message = "Increments the number by + 1 and returns the result.";
-//         const expected = 10;
-//         const actual = addition();
-
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
+test("---------addition---------", t => {
+    t.test("addition", assert => {
+        const message = "Increments the number by + 1 and returns the result.";
+        const expected = 10;
+        const actual = addition();
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // --------------------------------------------------- Boolean to String Conversion -------------------------------------
 // test("--------boolToString---------", t => {

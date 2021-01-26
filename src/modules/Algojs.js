@@ -84,23 +84,26 @@
     // }
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
-    export function reverseArray(){
-        var tab = [1, 2, 3, 4];
-        var tab2 = tab
-        var min = 0;
-        for(var i = 0; i < tab.length-1; i++){
-            for(var j = i + 1; j < tab.length; j++){
-                if(tab2[i] < tab2[j]){
-                    min = tab2[i];
-                    tab2[i] = tab2[j];
-                    tab2[j] = min;
-                }
-            } 
-        }
-        return tab2;
-    }
+    // export function reverseArray(){
+    //     var tab = [1, 2, 3, 4];
+    //     var tab2 = tab
+    //     var min = 0;
+    //     for(var i = 0; i < tab.length-1; i++){
+    //         for(var j = i + 1; j < tab.length; j++){
+    //             if(tab2[i] < tab2[j]){
+    //                 min = tab2[i];
+    //                 tab2[i] = tab2[j];
+    //                 tab2[j] = min;
+    //             }
+    //         } 
+    //     }
+    //     return tab2;
+    // }
 // --------------------------------------------------- Reverse an Array -------------------------------------
-
+    export function addition(){
+        var numb = 9;
+        return numb + 1;
+    }
 
 // --------------------------------------------------- Return the Next Number from the Integer Passed -------------------------------------
 
