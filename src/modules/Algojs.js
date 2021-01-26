@@ -166,12 +166,19 @@
     // }
 
 // --------------------------------------------------- Add up the Numbers from a Single Number -------------------------------------
-        export function addUp(a){
-            var sum = 0;
-            var plus = 0;
-            for(var i = 1; i < a+1; i++){
-                plus = plus + i
-            }
-            return plus;
-        }
+        // export function addUp(a){
+        //     var sum = 0;
+        //     var plus = 0;
+        //     for(var i = 1; i < a+1; i++){
+        //         plus = plus + i
+        //     }
+        //     return plus;
+        // }
 // --------------------------------------------------- Matchstick Houses -------------------------------------
+        export function matchHouses(step){
+            var sum = 6
+            for(var i = 1; i < step; i++){
+                sum = sum + 5;
+            }
+        return sum
+        }
