@@ -75,16 +75,30 @@
 //     return b;
 // }
 // --------------------------------------------------- Return Last Item -------------------------------------
-    export function animals(){
-        var a = 2; var b = 3; var c = 5;
-        var chicken = a * 2
-        var cows = b * 4
-        var pigs = c * 4
-        return chicken + cows + pigs;
-    }
+    // export function animals(){
+    //     var a = 2; var b = 3; var c = 5;
+    //     var chicken = a * 2
+    //     var cows = b * 4
+    //     var pigs = c * 4
+    //     return chicken + cows + pigs;
+    // }
 
 // --------------------------------------------------- The Farm Problem -------------------------------------
-
+    export function reverseArray(){
+        var tab = [1, 2, 3, 4];
+        var tab2 = tab
+        var min = 0;
+        for(var i = 0; i < tab.length-1; i++){
+            for(var j = i + 1; j < tab.length; j++){
+                if(tab2[i] < tab2[j]){
+                    min = tab2[i];
+                    tab2[i] = tab2[j];
+                    tab2[j] = min;
+                }
+            } 
+        }
+        return tab2;
+    }
 // --------------------------------------------------- Reverse an Array -------------------------------------
 
 

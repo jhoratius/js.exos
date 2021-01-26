@@ -10,8 +10,8 @@ import {
     // sortByLength,
     // filterArray,
     // lastItem,
-    animals,
-    // reverseArray,
+    // animals,
+    reverseArray,
     // addition,
     // boolToString,
     // filterArrayInt,
@@ -171,29 +171,29 @@ import {
 // });
 
 // // -------------------------------------------------------- The Farm Problem --------------------------------
-test("---------animals---------", t => {
+// test("---------animals---------", t => {
 
-    t.test("animals", assert => {
-        const message = "returns the total number of legs of all the animals.";
-        const expected = 36;
-        const actual = animals();
+//     t.test("animals", assert => {
+//         const message = "returns the total number of legs of all the animals.";
+//         const expected = 36;
+//         const actual = animals();
 
-        assert.equal(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ----------------------------------------------- Reverse an Array -----------------------------------------
-// test("---------reverseArray---------", t => {
-//     t.test("reverseArray", assert => {
-//         const message = "reverse an array.";
-//         const expected = [4, 3, 2, 1];
-//         const actual = reverseArray();
-
-//         assert.deepEqual(actual, expected, message);
+//         assert.equal(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ----------------------------------------------- Reverse an Array -----------------------------------------
+test("---------reverseArray---------", t => {
+    t.test("reverseArray", assert => {
+        const message = "reverse an array.";
+        const expected = [4, 3, 2, 1];
+        const actual = reverseArray();
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -------------------------------------------------- Return the Next Number from the Integer Passed --------------------------------------
 // test("---------addition---------", t => {
