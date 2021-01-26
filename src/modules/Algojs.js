@@ -140,23 +140,23 @@
     //     }
     // }
 // --------------------------------------------------- Simple Loop -------------------------------------
-    export function simpleLoop(numb){
-        var tab = [];
-        var add = 0;
-        for(var i = 0; i < numb; i++){
-            add = i + 1;
-            tab.push(add);
-        }
-        return tab;
-    }
-// --------------------------------------------------- Area of a Rectangle -------------------------------------
-    // export function getArea(a, b){
-    //     if(a <= 0 || b <= 0){
-    //         return -1;
+    // export function simpleLoop(numb){
+    //     var tab = [];
+    //     var add = 0;
+    //     for(var i = 0; i < numb; i++){
+    //         add = i + 1;
+    //         tab.push(add);
     //     }
-    //     var area = a * b;
-    //     return area;
+    //     return tab;
     // }
+// --------------------------------------------------- Area of a Rectangle -------------------------------------
+    export function getArea(a, b){
+        if(a <= 0 || b <= 0){
+            return -1;
+        }
+        var area = a * b;
+        return area;
+    }
 // --------------------------------------------------- Two Makes Ten -------------------------------------
     // export function makesTen(a, b){
     //     if(a === 10 || b === 10 || a + b === 10){

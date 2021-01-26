@@ -18,8 +18,8 @@ import {
     // arrayOfMultiples,
     // convert,
     // returnNegative,
-    simpleLoop,
-    // getArea,
+    // simpleLoop,
+    getArea,
     // makesTen,
     // addUp,
     // matchHouses,
@@ -340,52 +340,52 @@ import {
 // });
 
 // // ------------------------------------------------- Simple Loop---------------------------------------
-test("---------Simple Loop---------", t => {
-    t.test("SimpleLoop     ----> 1 TEST", assert => {
-        const message = "returns negative of that number.  Your function  Should return -4";
-        const expected = [1, 2, 3, 4, 5, 6];
-        const actual = simpleLoop(6);
+// test("---------Simple Loop---------", t => {
+//     t.test("SimpleLoop     ----> 1 TEST", assert => {
+//         const message = "returns negative of that number.  Your function  Should return -4";
+//         const expected = [1, 2, 3, 4, 5, 6];
+//         const actual = simpleLoop(6);
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // ---------------------------------------------Area of a Rectangle-------------------------------------------
-// test("---------Area of a Rectangle---------", t => {
-//     t.test("TEST 1 :  getArea", assert => {
-//         const message = "returns negative of that number.  Your function  Should return 12";
-//         const expected = 12;
-//         const actual = getArea(3, 4);
-
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 2 :  getArea", assert => {
-//         const message = "returns negative of that number.  Your function  Should return 110";
-//         const expected = 110;
-//         const actual = getArea(10, 11);
-
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 3 :  getArea", assert => {
-//         const message = "returns negative of that number.  Your function  Should return -1";
-//         const expected = -1;
-//         const actual = getArea(-1, 5);
-
-//         assert.equal(actual, expected, message);
-//         assert.end();
-//     });
-//     t.test("TEST 4 :  getArea", assert => {
-//         const message = "returns negative of that number. Your function  Should return -1";
-//         const expected = -1;
-//         const actual = getArea(0, 2);
-
-//         assert.equal(actual, expected, message);
+//         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // ---------------------------------------------Area of a Rectangle-------------------------------------------
+test("---------Area of a Rectangle---------", t => {
+    t.test("TEST 1 :  getArea", assert => {
+        const message = "returns negative of that number.  Your function  Should return 12";
+        const expected = 12;
+        const actual = getArea(3, 4);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 2 :  getArea", assert => {
+        const message = "returns negative of that number.  Your function  Should return 110";
+        const expected = 110;
+        const actual = getArea(10, 11);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 3 :  getArea", assert => {
+        const message = "returns negative of that number.  Your function  Should return -1";
+        const expected = -1;
+        const actual = getArea(-1, 5);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+    t.test("TEST 4 :  getArea", assert => {
+        const message = "returns negative of that number. Your function  Should return -1";
+        const expected = -1;
+        const actual = getArea(0, 2);
+
+        assert.equal(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -----------------------------------------------Two Makes Ten-----------------------------------------
 // test("---------Two Makes Ten---------", t => {
