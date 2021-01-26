@@ -7,8 +7,8 @@ import {
     // GrasshopperOrder,
     // getFirstValue,
     // minMax,
-    sortByLength,
-    // filterArray,
+    // sortByLength,
+    filterArray,
     // animals,
     // lastItem,
     // reverseArray,
@@ -116,46 +116,46 @@ import {
 // });
 
 // // -------------------------------------------- Sort by String Length --------------------------------------------
-test("---------sortByLength---------", t => {
+// test("---------sortByLength---------", t => {
 
-    t.test("TEST 1 : sortByLength", assert => {
-        const message = "returns an array of strings sorted by length in **ascending** order like a, bb, ccc, dddd, eeeee";
-        const expected = ["a", "bb", "ccc", "dddd", "eeeee"];
-        const actual = sortByLength(["a", "ccc", "eeeee", "dddd", "bb"]);
+//     t.test("TEST 1 : sortByLength", assert => {
+//         const message = "returns an array of strings sorted by length in **ascending** order like a, bb, ccc, dddd, eeeee";
+//         const expected = ["a", "bb", "ccc", "dddd", "eeeee"];
+//         const actual = sortByLength(["a", "ccc", "eeeee", "dddd", "bb"]);
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 2 : sortByLength", assert => {
-        const message = 'returns an array of strings sorted by length in **ascending** order like ["Apple", "Google", "Microsoft"]';
-        const expected = ["Apple", "Google", "Microsoft"];
-        const actual = sortByLength(["Google", "Apple", "Microsoft"]);
+//         assert.deepEqual(actual, expected, message);
+//         assert.end();
+//     });
+//     t.test("TEST 2 : sortByLength", assert => {
+//         const message = 'returns an array of strings sorted by length in **ascending** order like ["Apple", "Google", "Microsoft"]';
+//         const expected = ["Apple", "Google", "Microsoft"];
+//         const actual = sortByLength(["Google", "Apple", "Microsoft"]);
 
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-    t.test("TEST 3 : sortByLength", assert => {
-        const message = 'returns an array of strings sorted by length in **ascending** order like ["Raphael", "Leonardo", "Donatello", "Michelangelo"]';
-        const expected = ["Raphael", "Leonardo", "Donatello", "Michelangelo"];
-        const actual = sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"]);
-
-        assert.deepEqual(actual, expected, message);
-        assert.end();
-    });
-});
-
-// // -------------------------------------------------- Filter Strings from Array --------------------------------------
-// test("---------filterArray---------", t => {
-
-//     t.test("filterArray", assert => {
-//         const message = "returns an array of integers only.";
-//         const expected = [1, 2, 3, 4];
-//         const actual = filterArray();
+//         assert.deepEqual(actual, expected, message);
+//         assert.end();
+//     });
+//     t.test("TEST 3 : sortByLength", assert => {
+//         const message = 'returns an array of strings sorted by length in **ascending** order like ["Raphael", "Leonardo", "Donatello", "Michelangelo"]';
+//         const expected = ["Raphael", "Leonardo", "Donatello", "Michelangelo"];
+//         const actual = sortByLength(["Leonardo", "Michelangelo", "Raphael", "Donatello"]);
 
 //         assert.deepEqual(actual, expected, message);
 //         assert.end();
 //     });
 // });
+
+// // -------------------------------------------------- Filter Strings from Array --------------------------------------
+test("---------filterArray---------", t => {
+
+    t.test("filterArray", assert => {
+        const message = "returns an array of integers only.";
+        const expected = [1, 2, 3, 4];
+        const actual = filterArray();
+
+        assert.deepEqual(actual, expected, message);
+        assert.end();
+    });
+});
 
 // // -----------------------------------------------The Farm Problem -----------------------------------------
 // test("---------The Farm Problem---------", t => {

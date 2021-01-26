@@ -26,8 +26,8 @@
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
 // export function minMax(tab){
-//     var a = tab[0]
-//     var b = tab[0]
+//     var a = tab[0];
+//     var b = tab[0];
 //     for(var i=0; i < tab.length; i++){
 //         if(a > tab[i+1]){
 //             a = tab[i+1];
@@ -42,22 +42,31 @@
 
 
 // --------------------------------------------------- Find the Smallest and Biggest Numbers -------------------------------------
-    export function sortByLength(tab){
-        var tab2 = tab;
-        var tempo = 0;
-        for(var i = 0; i < tab.length-1; i++){
-            for(var j = i + 1; j < tab.length; j++)
-                if(tab2[i].length > tab2[j].length){
-                    tempo = tab2[i];
-                    tab2[i] = tab2[j];
-                    tab2[j] = tempo;
-                }
-            }
-        return tab2;
-    }
+    // export function sortByLength(tab){
+    //     var tab2 = tab;
+    //     var tempo = 0;
+    //     for(var i = 0; i < tab.length-1; i++){
+    //         for(var j = i + 1; j < tab.length; j++)
+    //             if(tab2[i].length > tab2[j].length){
+    //                 tempo = tab2[i];
+    //                 tab2[i] = tab2[j];
+    //                 tab2[j] = tempo;
+    //             }
+    //         }
+    //     return tab2;
+    // }
 
 // --------------------------------------------------- Sort by String Length -------------------------------------
-
+export function filterArray(){
+    var tab = [1, 1.5, 2, 3, "a", "b", 4];
+    var tab2 = [];
+    for(var i = 0; i < tab.length; i++){
+        if(tab[i] % 1 === 0 ){
+            tab2.push(tab[i]);
+        }
+    }
+    return tab2;
+}
 
 // --------------------------------------------------- Filter Strings from Array -------------------------------------
 
